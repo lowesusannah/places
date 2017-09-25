@@ -2,11 +2,11 @@
   display: none;
 }
 
-.contact {
+.info {
   cursor: pointer;
   color: #0088cc;
 }
 
-.contact:hover {
+.info:hover {
   text-decoration: underline;
 }

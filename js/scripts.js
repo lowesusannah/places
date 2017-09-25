@@ -18,14 +18,19 @@ $(document).ready(function(){
   var hotel = $("#hotel").val();
   var landmark = $("#landmark").val();
   var newDestination = new Destination(country, city, hotel, landmark);
+console.log(typeof newDestination);
+
 
 $("ul#output").append("<li><span class='info'>" + newDestination.cityCountry() + "</span></li>");
 alert("here");
 $(".info").click(function(){
   $("#show-info").show();
-  $("#output h2").text(Destination.country);
-  $(".country").text(Destination.country);
-  $(".city").text(Destination.city);
+  $("#show-info h2").text(newDestination.country);
+  $(".country").text(newDestination.country);
+  $(".city").text(newDestination.city);
+  $(".hotel").text(newDestination.hotel);
+  $(".landmark").text(newDestination.landmark);
+
 });
 });
 });
